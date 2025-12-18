@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M1YN6BREE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7M1YN6BREE');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Consulting Services | Global Travelserve LLC</title>
@@ -18,24 +9,15 @@
     <style>
         body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
         .navbar { background-color: #001F3F !important; padding: 1rem 0; }
-        
-        /* Hero Section */
         .hero-travel { 
             background: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.7)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1500&q=80'); 
             background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center; 
         }
-
-        /* Feature Cards */
         .card-service { border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; border-radius: 12px; overflow: hidden; }
         .card-service:hover { transform: translateY(-5px); }
         .service-icon-img { height: 200px; object-fit: cover; width: 100%; }
-
-        /* Benefits Section */
         .benefits-bg { background-color: #f8f9fa; padding: 80px 0; }
-        .benefit-item { padding: 20px; }
-        .benefit-icon { color: #001F3F; font-size: 2rem; margin-bottom: 15px; font-weight: bold; }
-
-        footer { background: #001F3F; color: white; padding: 60px 0; margin-top: 0; }
+        footer { background: #001F3F; color: white; padding: 60px 0; }
         .btn-warning { background-color: #ffc107; border: none; font-weight: 700; color: #001F3F; }
     </style>
 </head>
@@ -69,15 +51,16 @@
             <p class="text-muted">Tailored strategies for every type of global movement.</p>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-    <div class="card h-100 card-service">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80" class="service-icon-img" alt="Corporate Logistics">
-        <div class="card-body">
-            <h4 class="fw-bold h5">Corporate Logistics</h4>
-            <p class="small text-muted">Optimized travel management for teams and executives, ensuring productivity and policy compliance.</p>
-        </div>
-    </div>
-</div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 card-service">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80" class="service-icon-img" alt="Corporate Logistics">
+                    <div class="card-body">
+                        <h4 class="fw-bold h5">Corporate Logistics</h4>
+                        <p class="small text-muted">Optimized travel management for teams and executives, ensuring productivity and policy compliance.</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 card-service">
                     <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=500&q=80" class="service-icon-img" alt="Luxury Travel">
@@ -108,49 +91,16 @@
         </div>
     </section>
 
-    <section class="benefits-bg">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg mb-4 mb-lg-0" alt="Consulting Success">
-                </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <h2 class="fw-bold mb-4">Why Global Travelserve?</h2>
-                    <div class="benefit-item border-bottom">
-                        <h5 class="fw-bold">Global Network</h5>
-                        <p class="text-muted">Direct relationships with partners in over 100 countries to provide local on-the-ground support.</p>
-                    </div>
-                    <div class="benefit-item border-bottom">
-                        <h5 class="fw-bold">Time Efficiency</h5>
-                        <p class="text-muted">We handle the 40+ hours of research and booking logistics required for high-complexity trips.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h5 class="fw-bold">Unbiased Advocacy</h5>
-                        <p class="text-muted">We work for you, not the suppliers, ensuring you get the best value and protection for your investment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-5 py-5 text-center">
-        <h2 class="fw-bold">Ready to Simplify Your Travel?</h2>
-        <p class="mb-4">Contact our Wyoming-based headquarters for a custom service quote.</p>
-        <a href="contact-us.html" class="btn btn-primary btn-lg px-5">Get a Custom Quote</a>
-    </section>
-
-    <footer>
-        <div class="container text-center">
+    <footer class="text-center text-white">
+        <div class="container py-4">
             <h4 class="fw-bold mb-4">GLOBAL TRAVELSERVE LLC</h4>
             <p class="mb-1">4036 Cliff St, Laramie, Wyoming 82070, USA</p>
             <p class="mb-4">Direct Line: +1 (839) 999 2009 | support@globaltravelserve.world</p>
-            <hr class="bg-white opacity-25">
-            <div class="small text-white-50 mt-4">
-                <a href="privacy-policy.html" class="text-white-50 text-decoration-none mx-2">Privacy Policy</a> | 
-                <a href="refund-policy.html" class="text-white-50 text-decoration-none mx-2">Refund Policy</a> | 
-                <a href="terms-of-service.html" class="text-white-50 text-decoration-none mx-2">Terms of Service</a>
+            <div class="small opacity-50">
+                <a href="privacy-policy.html" class="text-white text-decoration-none mx-2">Privacy Policy</a> | 
+                <a href="refund-policy.html" class="text-white text-decoration-none mx-2">Refund Policy</a> | 
+                <a href="terms-of-service.html" class="text-white text-decoration-none mx-2">Terms of Service</a>
             </div>
-            <p class="small text-white-50 mt-3">© 2025 Global Travelserve LLC. All Rights Reserved.</p>
         </div>
     </footer>
 
