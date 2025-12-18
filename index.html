@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M1YN6BREE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7M1YN6BREE');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Travelserve LLC | Travel & Digital Consulting</title>
@@ -19,13 +10,13 @@
         body { font-family: 'Inter', sans-serif; color: #333; }
         .navbar { background-color: #001F3F !important; padding: 1rem 0; }
         .hero-home { 
-            background: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1500&q=80'); 
-            background-size: cover; color: white; padding: 150px 0; text-align: center; 
+            background: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.75)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1500&q=80'); 
+            background-size: cover; background-position: center; color: white; padding: 160px 0; text-align: center; 
         }
-        .service-box { border-radius: 15px; transition: 0.3s; border: 1px solid #eee; overflow: hidden; }
-        .service-box:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-        .btn-warning { background-color: #ffc107; border: none; font-weight: 700; color: #001F3F; }
-        footer { background: #001F3F; color: white; padding: 60px 0; }
+        .service-preview { border: none; border-radius: 15px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .service-preview:hover { transform: translateY(-10px); }
+        .btn-gold { background: #ffc107; color: #001F3F; font-weight: 700; border: none; padding: 12px 30px; }
+        footer { background: #001F3F; color: white; padding: 80px 0; }
     </style>
 </head>
 <body>
@@ -43,46 +34,44 @@
 
     <header class="hero-home">
         <div class="container">
-            <h1 class="display-2 fw-bold mb-3 text-uppercase">Global Expertise</h1>
-            <p class="lead mb-5 px-md-5 fs-4">Premier Consulting Solutions for International Logistics and Digital Growth.</p>
+            <h1 class="display-1 fw-bold mb-3">Global Expertise.</h1>
+            <p class="lead mb-5 fs-4 px-md-5">Strategically navigating the world of logistics and digital growth from our headquarters in Laramie, Wyoming.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="travel-consulting.html" class="btn btn-warning btn-lg px-4">Travel Services</a>
-                <a href="seo-marketing.html" class="btn btn-outline-light btn-lg px-4">SEO Strategies</a>
+                <a href="travel-consulting.html" class="btn btn-gold btn-lg">Travel Consulting</a>
+                <a href="seo-marketing.html" class="btn btn-outline-light btn-lg">SEO Strategies</a>
             </div>
         </div>
     </header>
 
-    <section class="container my-5 py-5">
-        <div class="row g-5 align-items-center">
+    <section class="container my-5 py-5 text-center">
+        <h2 class="fw-bold mb-5">Dual-Pillar Consulting Model</h2>
+        <div class="row g-4">
             <div class="col-md-6">
-                <h2 class="fw-bold mb-4">Bridging the Gap Between Ambition and Execution</h2>
-                <p class="text-muted fs-5">Based in Laramie, Wyoming, Global Travelserve LLC operates at the intersection of global movement and digital visibility. We provide the strategies businesses and individuals need to navigate the modern world.</p>
-                <div class="mt-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="bg-primary text-white rounded-circle p-2 me-3">✓</div>
-                        <span class="fw-bold">Verified US-Based Operations</span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <div class="bg-primary text-white rounded-circle p-2 me-3">✓</div>
-                        <span class="fw-bold">Global Partner Network</span>
-                    </div>
+                <div class="p-5 service-preview h-100">
+                    <h3 class="fw-bold">Global Travel</h3>
+                    <p class="text-muted">From corporate logistics to bespoke luxury itineraries, we handle the complexities of international movement.</p>
+                    <a href="travel-consulting.html" class="text-primary fw-bold text-decoration-none">View All Travel Services →</a>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Consulting Office">
+                <div class="p-5 service-preview h-100">
+                    <h3 class="fw-bold">Digital Growth</h3>
+                    <p class="text-muted">Mastering the search landscape through technical SEO, content intelligence, and deep data analytics.</p>
+                    <a href="seo-marketing.html" class="text-primary fw-bold text-decoration-none">View All SEO Services →</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container text-center">
-            <h4 class="fw-bold mb-4">GLOBAL TRAVELSERVE LLC</h4>
-            <p class="mb-1">4036 Cliff St, Laramie, Wyoming 82070, USA</p>
+            <h3 class="fw-bold mb-4">GLOBAL TRAVELSERVE LLC</h3>
+            <p class="mb-1">4036 Cliff St, Laramie, WY 82070, USA</p>
             <p class="mb-4">+1 (839) 999 2009 | support@globaltravelserve.world</p>
-            <div class="small text-white-50">
-                <a href="privacy-policy.html" class="text-white-50 mx-2">Privacy</a> | 
-                <a href="refund-policy.html" class="text-white-50 mx-2">Refunds</a> | 
-                <a href="terms-of-service.html" class="text-white-50 mx-2">Terms</a>
+            <div class="small opacity-50">
+                <a href="privacy-policy.html" class="text-white mx-2">Privacy</a> | 
+                <a href="refund-policy.html" class="text-white mx-2">Refunds</a> | 
+                <a href="terms-of-service.html" class="text-white mx-2">Terms</a>
             </div>
         </div>
     </footer>
