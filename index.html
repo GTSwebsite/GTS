@@ -1,4 +1,3 @@
-<!-- /index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,119 +5,53 @@
   <title>Global Travelserve LLC — International Travel Consulting & SEO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Personalized international travel consulting and niche SEO marketing. Stress-free trip planning with data-driven web visibility.">
-  <link rel="canonical" href="https://YOURDOMAIN.com/">
+  <link rel="canonical" href="https://globaltravelserve.world/">
   <link rel="icon" href="/favicon.ico">
-  <meta property="og:title" content="Global Travelserve LLC — International Travel Consulting & SEO">
-  <meta property="og:description" content="Personalized travel consulting + data-driven SEO.">
-  <meta property="og:url" content="https://YOURDOMAIN.com/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preload" href="/assets/styles.css" as="style">
-  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Inline CSS so styling works immediately (no extra files needed) -->
+  <style>
+    :root{--bg:#0b0d12;--card:#111418;--text:#e9eef5;--muted:#aeb6c2;--accent:#7cc4ff;--line:#242a33}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:#0b0d12;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+    img{max-width:100%;height:auto}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .row{display:flex;gap:16px}.between{justify-content:space-between}.center{align-items:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .hero{padding-block:56px}
+    .lead{color:var(--muted);max-width:60ch}
+    .accent{background:linear-gradient(90deg,#7cc4ff,#a7ffda);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .actions{display:flex;gap:12px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent}
+    .btn.primary{background:var(--accent);color:#001a2b;border-color:transparent}
+    .site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,18,.85);backdrop-filter:saturate(140%) blur(8px);z-index:10}
+    .brand{font-weight:700}
+    .nav{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    .nav a{padding:10px 6px;border-radius:8px}
+    .nav a.active,.nav a:focus{outline:2px solid var(--accent)}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .trust .checks{list-style:'✔  ';padding-left:18px;color:var(--muted)}
+    .steps{padding-left:20px}
+    .site-footer{border-top:1px solid var(--line);margin-top:48px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
+    .footer-links{list-style:none;display:flex;gap:12px;padding:0;margin:0}
+    .skip-link{position:absolute;left:-9999px} .skip-link:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px;border-radius:8px}
+    .legal h2{margin-top:24px}
+    .center{display:grid;place-items:center;min-height:60vh;text-align:center}
+    @media (max-width:600px){.footer-grid{grid-template-columns:1fr}}
+  </style>
+
+  <!-- Basic SEO structured data for trust -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Global Travelserve LLC",
-    "url":"https://YOURDOMAIN.com/",
-    "logo":"https://YOURDOMAIN.com/assets/logo.png",
-    "sameAs":["https://www.linkedin.com/company/YOURCOMPANY"],
-    "contactPoint":[{
-      "@type":"ContactPoint",
-      "telephone":"+1-555-555-1212",
-      "contactType":"customer support",
-      "email":"support@YOURDOMAIN.com",
-      "areaServed":"US"
-    }]
-  }
-  </script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container row between center">
-      <a class="brand" href="/">Global Travelserve LLC</a>
-      <nav aria-label="Primary">
-        <ul class="nav">
-          <li><a href="/travel-consulting.html">Travel Consulting</a></li>
-          <li><a href="/seo-marketing.html">SEO Marketing</a></li>
-          <li><a href="/contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero container">
-      <h1>Stress-Free International Travel, <span class="accent">Done Right</span></h1>
-      <p class="lead">Personalized trip planning for solo, family, and business travelers — paired with niche SEO that builds online authority.</p>
-      <div class="actions">
-        <a class="btn primary" href="/contact-us.html">Start your plan</a>
-        <a class="btn" href="/seo-marketing.html">See our SEO work</a>
-      </div>
-    </section>
-
-    <section class="grid container">
-      <article class="card">
-        <h2>Itineraries that fit you</h2>
-        <p>Visas, routes, budgets, and on-the-ground support tailored to your goals.</p>
-      </article>
-      <article class="card">
-        <h2>Risk & compliance</h2>
-        <p>Up-to-date advice on entry rules, insurance, and safety for smooth travel.</p>
-      </article>
-      <article class="card">
-        <h2>SEO for travel brands</h2>
-        <p>Technical SEO + content that ranks for competitive travel niches.</p>
-      </article>
-    </section>
-
-    <section class="container trust">
-      <h2>Why Global Travelserve</h2>
-      <ul class="checks">
-        <li>Registered US business — transparent policies & pricing</li>
-        <li>Direct support by email & phone</li>
-        <li>No surprise fees — clear deliverables</li>
-      </ul>
-    </section>
-
-    <section class="container">
-      <h2>How engagement works</h2>
-      <ol class="steps">
-        <li>Discovery call (free)</li>
-        <li>Custom proposal with timeline and fixed/retainer pricing</li>
-        <li>Delivery & follow-up support</li>
-      </ol>
-      <p><strong>Pricing:</strong> proposals are fixed-fee or monthly retainer; no automated checkout on this site.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <section>
-          <h3>Global Travelserve LLC</h3>
-          <address>
-            123 Example Street, Suite 100, City, ST 00000<br>
-            +1 (555) 555-1212 · <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a>
-          </address>
-          <p>© <span id="year"></span> Global Travelserve LLC. All rights reserved.</p>
-        </section>
-        <nav aria-label="Footer">
-          <ul class="footer-links">
-            <li><a href="/privacy-policy.html">Privacy</a></li>
-            <li><a href="/terms-of-service.html">Terms</a></li>
-            <li><a href="/refund-policy.html">Refunds</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <script>
-      // why: keep copyright current without manual edits
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
-</body>
-</html>
+    "url":"https://globaltravelserve.world/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4036 Cliff St",
+      "addressLocality": "Laramie",
+      "addressRegion": "Wyoming",
+      "postalCode": "8207
