@@ -1,57 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Global Travelserve LLC — International Travel Consulting & SEO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personalized international travel consulting and niche SEO marketing. Stress-free trip planning with data-driven web visibility.">
-  <link rel="canonical" href="https://globaltravelserve.world/">
-  <link rel="icon" href="/favicon.ico">
+  <meta charset="utf-8" />
+  <title>Global Travelserve LLC — Home (Rescue)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personalized international travel consulting and niche SEO marketing." />
+  <link rel="canonical" href="https://globaltravelserve.world/" />
+  <link rel="icon" href="/favicon.ico" />
 
-  <!-- Inline CSS so styling works immediately (no extra files needed) -->
+  <!-- Inline CSS (guaranteed visible) -->
   <style>
-    :root{--bg:#0b0d12;--card:#111418;--text:#e9eef5;--muted:#aeb6c2;--accent:#7cc4ff;--line:#242a33}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;background:#0b0d12;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
-    img{max-width:100%;height:auto}
-    a{color:var(--accent);text-decoration:none}
+    /* hard defaults to avoid 'black screen' */
+    html,body{margin:0;padding:0}
+    body{background:#0b0d12;color:#e9eef5;font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+    a{color:#7cc4ff;text-decoration:none}
     a:hover{text-decoration:underline}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-    .row{display:flex;gap:16px}.between{justify-content:space-between}.center{align-items:center}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-    .hero{padding-block:56px}
-    .lead{color:var(--muted);max-width:60ch}
-    .accent{background:linear-gradient(90deg,#7cc4ff,#a7ffda);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .actions{display:flex;gap:12px;margin-top:12px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent}
-    .btn.primary{background:var(--accent);color:#001a2b;border-color:transparent}
-    .site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,18,.85);backdrop-filter:saturate(140%) blur(8px);z-index:10}
+    .hdr{position:sticky;top:0;background:#0b0d12cc;border-bottom:1px solid #242a33;backdrop-filter:saturate(140%) blur(8px)}
     .brand{font-weight:700}
     .nav{list-style:none;display:flex;gap:16px;margin:0;padding:0}
     .nav a{padding:10px 6px;border-radius:8px}
-    .nav a.active,.nav a:focus{outline:2px solid var(--accent)}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-    .trust .checks{list-style:'✔  ';padding-left:18px;color:var(--muted)}
+    .hero{padding:40px 24px}
+    .lead{color:#aeb6c2;max-width:65ch}
+    .row{display:flex;gap:16px}
+    .between{justify-content:space-between}
+    .center{align-items:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:#111418;border:1px solid #242a33;border-radius:16px;padding:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid #242a33;background:transparent}
+    .btn.primary{background:#7cc4ff;color:#001a2b;border-color:transparent}
+    .checks{list-style:'✔  ';padding-left:18px;color:#aeb6c2}
     .steps{padding-left:20px}
-    .site-footer{border-top:1px solid var(--line);margin-top:48px}
-    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
-    .footer-links{list-style:none;display:flex;gap:12px;padding:0;margin:0}
-    .skip-link{position:absolute;left:-9999px} .skip-link:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px;border-radius:8px}
-    .legal h2{margin-top:24px}
-    .center{display:grid;place-items:center;min-height:60vh;text-align:center}
-    @media (max-width:600px){.footer-grid{grid-template-columns:1fr}}
+    .ftr{border-top:1px solid #242a33;margin-top:48px}
+    .fgrid{display:grid;grid-template-columns:1fr auto;gap:16px}
+    .flinks{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+    .badge{display:inline-block;background:#00d26a;color:#001b0f;border-radius:999px;padding:4px 10px;font-size:12px;margin-left:8px}
+    .debug{display:inline-block;background:#222;border:1px solid #444;border-radius:8px;padding:6px 10px;margin-left:8px}
+    @media (max-width:600px){.fgrid{grid-template-columns:1fr}}
   </style>
 
-  <!-- Basic SEO structured data for trust -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Global Travelserve LLC",
-    "url":"https://globaltravelserve.world/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "4036 Cliff St",
-      "addressLocality": "Laramie",
-      "addressRegion": "Wyoming",
-      "postalCode": "8207
+  <!-- If THIS shows below, your styles loaded: -->
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      const el=document.getElementById('style-ok');
+      if(el) el.textContent='Styles loaded ✓';
+    });
+  </script>
+</head>
+<body>
+  <header class="hdr">
+    <div class="container row between center">
+      <div>
+        <a class="brand" href="/">Global Travelserve LLC</a>
+        <span id="style-ok" class="badge">Checking styles…</span>
+        <span class="debug">If you can read this, HTML rendered</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="/travel-consulting.html">Travel Consulting</a></li>
+          <li><a href="/seo-marketing.html">SEO Marketing</a></li>
+          <li><a href="/contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Stress-Free International Travel</h1>
+      <p class="lead">Personalized trip planning and niche SEO for travel brands. Visible content test: if your screen was black before, this page should now be fully readable.</p>
+      <p>
+        <a class="btn primary" href="/contact-us.html">Start your plan</a>
+        <a class="btn" href="/seo-marketing.html">See our SEO work</a>
+      </p>
+    </section>
+
+    <section class="container grid">
+      <article class="card">
+        <h2>Itineraries that fit you</h2>
+        <p>Routes, visas, budgets, and on-the-ground support tailored to your goals.</p>
+      </article>
+      <article class="card">
+        <h2>Risk & compliance</h2>
+        <p>Up-to-date guidance on entry rules, insurance, and safety.</p>
+      </article>
+      <article class="card">
+        <h2>SEO for travel brands</h2>
+        <p>Technical SEO + content that ranks for competitive travel niches.</p>
+      </article>
+    </section>
+
+    <section class="container">
+      <h2>Why Global Travelserve</h2>
+      <ul class="checks">
+        <li>Registered US business — transparent policies & pricing</li>
+        <li>Direct support via email & phone</li>
+        <li>No surprise fees — clear deliverables</li>
+      </ul>
+      <h2>How engagement works</h2>
+      <ol class="steps">
+        <li>Discovery call (free)</li>
+        <li>Proposal with timeline and fixed/retainer pricing</li>
+        <li>Delivery & follow-up support</li>
+      </ol>
+      <p><strong>Pricing:</strong> fixed-fee or monthly retainer; no automated checkout on this site.</p>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="container">
+      <div class="fgrid">
+        <section>
+          <h3>Global Travelserve LLC</h3>
+          <address>
+            4036 Cliff St, Laramie, Wyoming 82070, United States of America<br />
+            +1 (610) 206-0884 · +1 (839) 999-2009 ·
+            <a href="mailto:support@globaltravelserve.world">support@globaltravelserve.world</a>
+          </address>
+          <p>© <span id="year"></span> Global Travelserve LLC. All rights reserved.</p>
+        </section>
+        <nav aria-label="Footer">
+          <ul class="flinks">
+            <li><a href="/privacy-policy.html">Privacy</a></li>
+            <li><a href="/terms-of-service.html">Terms</a></li>
+            <li><a href="/refund-policy.html">Refunds</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
