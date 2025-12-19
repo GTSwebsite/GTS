@@ -1,74 +1,33 @@
-<!-- /contact-us.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Contact — Global Travelserve LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Global Travelserve LLC for travel consulting and SEO services.">
-  <link rel="canonical" href="https://YOURDOMAIN.com/contact-us.html">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container row between center">
-      <a class="brand" href="/">Global Travelserve LLC</a>
-      <nav aria-label="Primary"><ul class="nav">
-        <li><a href="/travel-consulting.html">Travel Consulting</a></li>
-        <li><a href="/seo-marketing.html">SEO Marketing</a></li>
-        <li><a class="active" href="/contact-us.html">Contact</a></li>
-      </ul></nav>
-    </div>
-  </header>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Global Travelserve LLC for travel consulting and SEO services. We respond within one business day." />
+  <link rel="canonical" href="https://globaltravelserve.world/contact-us.html" />
+  <link rel="icon" href="/favicon.ico" />
 
-  <main id="main" class="container">
-    <h1>Contact us</h1>
-    <p>We reply within one business day. Fields marked * are required.</p>
-
-    <!-- Replace with your Formspree or Netlify form action -->
-    <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" autocomplete="on">
-      <input type="hidden" name="_subject" value="Website inquiry">
-      <label>Full name *<input name="name" required aria-required="true"></label>
-      <label>Email *<input type="email" name="email" required aria-required="true"></label>
-      <label>Phone <input type="tel" name="phone" inputmode="tel"></label>
-      <label>Service of interest *
-        <select name="service" required aria-required="true">
-          <option value="">Select…</option>
-          <option>Travel consulting</option>
-          <option>SEO marketing</option>
-        </select>
-      </label>
-      <label>Message *<textarea name="message" rows="6" required aria-required="true"></textarea></label>
-
-      <!-- simple honeypot -->
-      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
-
-      <div class="actions">
-        <button class="btn primary" type="submit">Send message</button>
-      </div>
-      <p class="form-note">By submitting, you agree to our <a href="/privacy-policy.html">Privacy Policy</a>.</p>
-    </form>
-
-    <section class="contact-details">
-      <h2>Business details</h2>
-      <address>
-        Global Travelserve LLC<br>
-        123 Example Street, Suite 100, City, ST 00000<br>
-        +1 (555) 555-1212 · <a href="mailto:support@YOURDOMAIN.com">support@YOURDOMAIN.com</a>
-      </address>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="/privacy-policy.html">Privacy</a></li>
-        <li><a href="/terms-of-service.html">Terms</a></li>
-        <li><a href="/refund-policy.html">Refunds</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-</html>
+  <!-- Inline CSS so styling works immediately -->
+  <style>
+    :root{--bg:#0b0d12;--card:#111418;--text:#e9eef5;--muted:#aeb6c2;--accent:#7cc4ff;--line:#242a33}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:#0b0d12;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+    img{max-width:100%;height:auto}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .row{display:flex;gap:16px}.between{justify-content:space-between}.center{align-items:center}
+    .site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,18,.85);backdrop-filter:saturate(140%) blur(8px);z-index:10}
+    .brand{font-weight:700}
+    .nav{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    .nav a{padding:10px 6px;border-radius:8px}
+    .nav a.active,.nav a:focus{outline:2px solid var(--accent)}
+    .site-footer{border-top:1px solid var(--line);margin-top:48px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
+    .footer-links{list-style:none;display:flex;gap:12px;padding:0;margin:0}
+    .page-title{margin:24px 0 8px}
+    .lead{color:var(--muted)}
+    .card{background:#111418;border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px}
+    .form label{display:block;margin:12px 0 6px}
+    .form input,.form textarea,.form select{width:100%;paddin
