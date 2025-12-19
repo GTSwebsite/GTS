@@ -1,19 +1,65 @@
-<!-- /thank-you.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Thank you — Global Travelserve LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Inline CSS for immediate styling -->
+  <style>
+    :root{--bg:#0b0d12;--card:#111418;--text:#e9eef5;--muted:#aeb6c2;--accent:#7cc4ff;--line:#242a33}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:#0b0d12;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .card{background:#111418;border:1px solid var(--line);border-radius:16px;padding:24px}
+    .center{display:grid;place-items:center;min-height:70vh;text-align:center}
+    .lead{color:var(--muted);max-width:60ch;margin:8px auto 16px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent}
+    .btn.primary{background:var(--accent);color:#001a2b;border-color:transparent}
+    .site-footer{border-top:1px solid var(--line);margin-top:24px}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
+    .footer-links{list-style:none;display:flex;gap:12px;padding:0;margin:0}
+    @media (max-width:600px){.footer-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <main class="container center">
-    <h1>Thanks! We received your message.</h1>
-    <p>We’ll reply from <strong>support@YOURDOMAIN.com</strong> within one business day.</p>
-    <a class="btn" href="/">Back to home</a>
+    <section class="card">
+      <h1>Thanks! We received your message.</h1>
+      <p class="lead">
+        We’ll reply from <strong>support@globaltravelserve.world</strong> within one business day.
+      </p>
+      <a class="btn primary" href="/">Back to home</a>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section>
+          <h3>Global Travelserve LLC</h3>
+          <address>
+            4036 Cliff St, Laramie, Wyoming 82070, United States of America<br />
+            +1 (610) 206-0884 · +1 (839) 999-2009 ·
+            <a href="mailto:support@globaltravelserve.world">support@globaltravelserve.world</a>
+          </address>
+          <p>© <span id="year"></span> Global Travelserve LLC. All rights reserved.</p>
+        </section>
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="/privacy-policy.html">Privacy</a></li>
+            <li><a href="/terms-of-service.html">Terms</a></li>
+            <li><a href="/refund-policy.html">Refunds</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
