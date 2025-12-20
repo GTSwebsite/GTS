@@ -1,139 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Travel Consulting — Global Travelserve LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="End-to-end international travel consulting: itineraries, visas, risk & compliance, budgets, and on-the-ground support." />
-  <link rel="canonical" href="https://globaltravelserve.world/travel-consulting.html" />
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Inline CSS (same look as home/contact) -->
-  <style>
-    :root{--bg:#0b0d12;--card:#111418;--text:#e9eef5;--muted:#aeb6c2;--accent:#7cc4ff;--line:#242a33}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;background:#0b0d12;color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-    .row{display:flex;gap:16px}.between{justify-content:space-between}.center{align-items:center}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .hero{padding-block:40px}
-    .lead{color:var(--muted);max-width:65ch}
-    .card{background:#111418;border:1px solid var(--line);border-radius:16px;padding:18px}
-    .site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,18,.85);backdrop-filter:saturate(140%) blur(8px);z-index:10}
-    .brand{font-weight:700}
-    .nav{list-style:none;display:flex;gap:16px;margin:0;padding:0}
-    .nav a{padding:10px 6px;border-radius:8px}
-    .nav a.active,.nav a:focus{outline:2px solid var(--accent)}
-    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent}
-    .btn.primary{background:var(--accent);color:#001a2b;border-color:transparent}
-    .checks{list-style:'✔  ';padding-left:18px;color:var(--muted)}
-    .steps{padding-left:20px}
-    .faq dt{font-weight:700;margin-top:12px}
-    .faq dd{margin:6px 0 12px;color:var(--muted)}
-    .site-footer{border-top:1px solid var(--line);margin-top:48px}
-    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
-    .footer-links{list-style:none;display:flex;gap:12px;padding:0;margin:0}
-    @media (max-width:600px){.footer-grid{grid-template-columns:1fr}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Logistics Consulting | Global Travelserve LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
+        .navbar { background-color: #001F3F !important; padding: 1rem 0; }
+        .hero-travel { 
+            background: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.75)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1500&q=80'); 
+            background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center; 
+        }
+        .section-title { color: #001F3F; font-weight: 700; margin-bottom: 40px; }
+        .card-service { border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.06); transition: 0.3s; border-radius: 12px; overflow: hidden; height: 100%; }
+        .card-service:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+        .service-icon-img { height: 220px; object-fit: cover; width: 100%; }
+        .btn-outline-primary { border-color: #001F3F; color: #001F3F; }
+        .btn-outline-primary:hover { background-color: #001F3F; color: white; }
+        .modal-header { background-color: #001F3F; color: white; border: none; }
+        .modal-content { border-radius: 15px; overflow: hidden; border: none; }
+        footer { background: #001F3F; color: white; padding: 60px 0; }
+        .gold-text { color: #D4AF37; font-weight: 600; }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container row between center">
-      <a class="brand" href="/">Global Travelserve LLC</a>
-      <nav aria-label="Primary">
-        <ul class="nav">
-          <li><a class="active" href="/travel-consulting.html" aria-current="page">Travel Consulting</a></li>
-          <li><a href="/seo-marketing.html">SEO Marketing</a></li>
-          <li><a href="/contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">GLOBAL TRAVELSERVE</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="travel-consulting.html">Travel Services</a>
+                <a class="nav-link" href="seo-marketing.html">SEO Services</a>
+                <a class="nav-link" href="contact-us.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-travel">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Global <span style="color: #D4AF37;">Travel Logistics</span></h1>
+            <p class="lead mb-4 opacity-75">Strategic coordination for corporate movement and bespoke leisure.</p>
+        </div>
+    </header>
+
+    <section class="container my-5 py-5">
+        <h2 class="text-center section-title">Consulting Specialties</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service text-center">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" class="service-icon-img" alt="Corporate Logistics">
+                    <div class="card-body">
+                        <h4 class="fw-bold h5">Corporate Logistics</h4>
+                        <p class="small text-muted">Optimized travel management for global business teams.</p>
+                        <button class="btn btn-outline-primary btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCorporate">Explore Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service text-center">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" class="service-icon-img" alt="Luxury Travel">
+                    <div class="card-body">
+                        <h4 class="fw-bold h5">Luxury Itineraries</h4>
+                        <p class="small text-muted">Bespoke experiences crafted for the discerning traveler.</p>
+                        <button class="btn btn-outline-primary btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalLuxury">Explore Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service text-center">
+                    <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=800&q=80" class="service-icon-img" alt="Visa Support">
+                    <div class="card-body">
+                        <h4 class="fw-bold h5">Visa & Documentation</h4>
+                        <p class="small text-muted">Expert navigation through global entry requirements.</p>
+                        <button class="btn btn-outline-primary btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalVisa">Explore Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service text-center">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" class="service-icon-img" alt="Group Travel">
+                    <div class="card-body">
+                        <h4 class="fw-bold h5">Group & Event Travel</h4>
+                        <p class="small text-muted">Seamless coordination for large-scale corporate retreats.</p>
+                        <button class="btn btn-outline-primary btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalGroup">Explore Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalCorporate" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Corporate Logistics</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">Our corporate logistics consulting focuses on cost-containment, travel policy compliance, and executive movement strategy for high-performance international teams.</div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Travel Consulting, End-to-End</h1>
-      <p class="lead">Itineraries, visas, risk & compliance, budgets, and on-the-ground support — tailored for solo travelers, families, and business teams.</p>
-      <p><a class="btn primary" href="/contact-us.html">Start your plan</a></p>
-    </section>
-
-    <section class="grid">
-      <article class="card">
-        <h2>Personalized itineraries</h2>
-        <p>Routes, pacing, transport, and lodging that match your time and budget — not generic lists.</p>
-      </article>
-      <article class="card">
-        <h2>Visa & entry guidance</h2>
-        <p>Up-to-date requirements, documents, and timing recommendations for smooth entry.</p>
-      </article>
-      <article class="card">
-        <h2>Risk & compliance</h2>
-        <p>Insurance, safety briefings, and contingency planning for dependable travel.</p>
-      </article>
-      <article class="card">
-        <h2>Budget optimization</h2>
-        <p>Trade-offs explained clearly — where to save, where to spend for the best experience.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>How we work</h2>
-      <ol class="steps">
-        <li>Discovery call (free)</li>
-        <li>Proposal with timeline and fixed/retainer pricing</li>
-        <li>Delivery: plan, docs, and support</li>
-      </ol>
-      <p><strong>Pricing:</strong> proposals are fixed-fee or monthly retainer; no automated checkout on this site.</p>
-    </section>
-
-    <section>
-      <h2>What you get</h2>
-      <ul class="checks">
-        <li>Custom itinerary PDF + editable checklist</li>
-        <li>Visa/entry guide with links to official sources</li>
-        <li>Messaging support during your trip window</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>FAQs</h2>
-      <dl class="faq">
-        <dt>Do you book flights or hotels?</dt>
-        <dd>We provide vetted options and booking notes; you complete purchases directly with providers.</dd>
-        <dt>Do you handle insurance?</dt>
-        <dd>We recommend suitable providers and coverage types; you choose and buy from the insurer.</dd>
-        <dt>What’s your refund policy?</dt>
-        <dd>See our <a href="/refund-policy.html">Refund & Cancellation Policy</a> for timelines and eligibility.</dd>
-      </dl>
-    </section>
-
-    <p><a class="btn primary" href="/contact-us.html">Request a consultation</a></p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <section>
-          <h3>Global Travelserve LLC</h3>
-          <address>
-            4036 Cliff St, Laramie, Wyoming 82070, United States of America<br />
-            +1 (610) 206-0884 · +1 (839) 999-2009 ·
-            <a href="mailto:support@globaltravelserve.world">support@globaltravelserve.world</a>
-          </address>
-          <p>© <span id="year"></span> Global Travelserve LLC. All rights reserved.</p>
-        </section>
-        <nav aria-label="Footer">
-          <ul class="footer-links">
-            <li><a href="/privacy-policy.html">Privacy</a></li>
-            <li><a href="/terms-of-service.html">Terms</a></li>
-            <li><a href="/refund-policy.html">Refunds</a></li>
-            <li><a href="/contact-us.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="modal fade" id="modalLuxury" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Luxury Itineraries</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">We curate exclusive, high-end travel experiences including private villa rentals, VIP airport transfers, and bespoke cultural itineraries that go beyond traditional tourism.</div>
+            </div>
+        </div>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+
+    <div class="modal fade" id="modalVisa" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Visa & Documentation</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">Our documentation audits ensure your global team is compliant with local health mandates, visa requirements, and entry protocols for over 180 countries.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGroup" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Group & Event Travel</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">We coordinate unified arrival manifests and accommodation logistics for corporate retreats, industry conferences, and private events of up to 500 attendees.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <h4 class="fw-bold mb-4">GLOBAL TRAVELSERVE LLC</h4>
+            <p class="mb-1">4036 Cliff St, Laramie, WY 82070, USA</p>
+            <p class="mb-4">+1 (839) 999 2009 | support@globaltravelserve.world</p>
+            <div class="small opacity-50">
+                <a href="privacy-policy.html" class="text-white mx-2">Privacy Policy</a> | 
+                <a href="refund-policy.html" class="text-white mx-2">Refund Policy</a> | 
+                <a href="terms-of-service.html" class="text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
