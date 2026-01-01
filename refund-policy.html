@@ -1,48 +1,92 @@
+<!-- refund-policy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refund Policy | Global Travelserve LLC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.8; }
-        .navbar { background-color: #001F3F !important; }
-        .legal-header { background: #f8f9fa; padding: 60px 0; border-bottom: 1px solid #dee2e6; }
-        footer { background: #001F3F; color: white; padding: 60px 0; }
-        h3 { color: #001F3F; font-weight: 700; }
+        :root {
+            --primary: #003366;
+            --accent: #FF6B35;
+            --gold: #E6B800;
+            --light: #F8F9FA;
+            --dark: #1E293B;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--dark); background: #fff; }
+        .navbar { background: var(--primary) !important; padding: 1.2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .navbar-brand { font-size: 1.8rem; font-weight: 700; }
+        .nav-link { font-weight: 500; margin: 0 10px; transition: color 0.3s; }
+        .nav-link:hover { color: var(--accent) !important; }
+
+        .content { padding: 100px 0 60px; }
+        h2 { color: var(--primary); font-weight: 600; }
+        p { line-height: 1.6; }
+
+        footer { background: var(--dark); color: #ddd; padding: 60px 0 30px; }
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container"><a class="navbar-brand fw-bold" href="index.html">GLOBAL TRAVELSERVE</a></div>
-    </nav>
 
-    <header class="legal-header text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <h1 class="display-4 fw-bold">Refund & Cancellation</h1>
-            <p class="text-muted">Last Updated: January 1, 2025</p>
-        </div>
-    </header>
-
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <h3>1. Consulting Services</h3>
-                <p>Because Global Travelserve LLC provides professional labor and time-intensive strategy (SEO audits and Travel Logistics), <strong>all consulting fees are non-refundable</strong> once service delivery has commenced.</p>
-
-                <h3>2. Cancellation Policy</h3>
-                <p>Clients may cancel scheduled consulting sessions up to 48 hours in advance for a full service credit. Cancellations made within 24 hours are subject to a 50% administrative fee.</p>
-
-                <h3>3. Third-Party Bookings</h3>
-                <p>Refunds for flights, hotels, or events coordinated by Global Travelserve LLC are subject to the specific refund policies of the airline or provider. We act solely as a consulting intermediary.</p>
-                
-                <div class="mt-5"><a href="index.html" class="btn btn-outline-dark">Back to Home</a></div>
+            <a class="navbar-brand" href="index.html">GLOBAL TRAVELSERVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="travel-consulting.html">Travel Services</a>
+                    <a class="nav-link" href="seo-marketing.html">SEO Services</a>
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <footer><div class="container text-center text-white"><p>GLOBAL TRAVELSERVE LLC</p></div></footer>
+    <section class="content">
+        <div class="container">
+            <h1 class="text-center mb-5" style="color: var(--primary);">Refund Policy</h1>
+            <p>Last updated: January 02, 2026</p>
+            <p>Thank you for choosing Global Travelserve LLC. We strive to provide the best services possible. If you are not entirely satisfied with your purchase, we're here to help.</p>
+
+            <h2>Refunds</h2>
+            <p>Our refund policy lasts 30 days for consulting services. If 30 days have passed since your purchase, we can’t offer you a full refund or exchange.</p>
+            <p>To be eligible for a return, your service must be unused and in the same condition that you received it.</p>
+
+            <h2>Refunds for Services</h2>
+            <p>Once we receive your request for a refund, we will inspect it and notify you on the status of your refund.</p>
+            <p>If the refund is approved, we will initiate a refund to your credit card (or original method of payment). You will receive the credit within a certain amount of days, depending on your card issuer's policies.</p>
+
+            <h2>Shipping</h2>
+            <p>Since we provide digital and consulting services, there are no shipping costs involved.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions on how to request a refund, contact us at support@globaltravelserve.world.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>GLOBAL TRAVELSERVE LLC</h4>
+                    <p>4036 Cliff St, Laramie, WY 82070, USA<br>+1 (839) 999 2009<br>support@globaltravelserve.world</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="refund-policy.html">Refunds</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+                    <p class="small mt-4">&copy; 2026 Global Travelserve LLC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
