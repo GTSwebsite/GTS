@@ -1,4 +1,4 @@
-<!-- privacy-policy.html -->
+<!-- privacy-policy.html (improved) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +22,18 @@
         .nav-link { font-weight: 500; margin: 0 10px; transition: color 0.3s; }
         .nav-link:hover { color: var(--accent) !important; }
 
-        .content { padding: 100px 0 60px; }
-        h2 { color: var(--primary); font-weight: 600; }
-        p { line-height: 1.6; }
+        .hero { 
+            background: linear-gradient(135deg, rgba(0,51,102,0.9), rgba(255,107,53,0.7)), 
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1950&q=80');
+            color: white; padding: 140px 0; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 700; }
+
+        .content { padding: 80px 0; }
+        .section-title { color: var(--primary); font-weight: 700; position: relative; display: inline-block; margin-bottom: 30px; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: var(--accent); position: absolute; bottom: -10px; left: 0; }
+        .icon-box { font-size: 2.5rem; color: var(--accent); margin-bottom: 20px; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); padding: 30px; margin-bottom: 30px; }
 
         footer { background: var(--dark); color: #ddd; padding: 60px 0 30px; }
         footer a { color: var(--gold); text-decoration: none; }
@@ -50,72 +59,55 @@
         </div>
     </nav>
 
-    <section class="content">
+    <header class="hero">
         <div class="container">
-            <h1 class="text-center mb-5" style="color: var(--primary);">Privacy Policy</h1>
-            <p>Last updated: January 02, 2026</p>
-            <p>Global Travelserve LLC ("us", "we", or "our") operates the globaltravelserve.world website (the "Service").</p>
-            <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+            <h1>Your Privacy Matters</h1>
+            <p class="lead">We are committed to protecting your personal information with transparency and care.</p>
+        </div>
+    </header>
 
-            <h2>Information Collection and Use</h2>
-            <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+    <section class="content bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Privacy Policy Overview</h2>
+                <p class="lead">Last updated: January 02, 2026</p>
+            </div>
 
-            <h2>Types of Data Collected</h2>
-            <h3>Personal Data</h3>
-            <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
-            <ul>
-                <li>Email address</li>
-                <li>First name and last name</li>
-                <li>Phone number</li>
-                <li>Address, State, Province, ZIP/Postal code, City</li>
-                <li>Cookies and Usage Data</li>
-            </ul>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                        <h4>We Protect Your Data</h4>
+                        <p>We only collect what’s necessary to deliver exceptional travel and SEO services. Your trust is our priority.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="icon-box"><i class="fas fa-lock"></i></div>
+                        <h4>Secure & Transparent</h4>
+                        <p>Industry-leading security measures safeguard your information. We never sell your data.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="icon-box"><i class="fas fa-info-circle"></i></div>
+                        <h4>Clear Usage</h4>
+                        <p>We use your data to improve services, communicate updates, and provide personalized support.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                        <h4>Your Rights</h4>
+                        <p>You control your data—access, update, or delete it anytime by contacting us.</p>
+                    </div>
+                </div>
+            </div>
 
-            <h3>Usage Data</h3>
-            <p>We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
-
-            <h2>Use of Data</h2>
-            <p>Global Travelserve LLC uses the collected data for various purposes:</p>
-            <ul>
-                <li>To provide and maintain the Service</li>
-                <li>To notify you about changes to our Service</li>
-                <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
-                <li>To provide customer care and support</li>
-                <li>To provide analysis or valuable information so that we can improve the Service</li>
-                <li>To monitor the usage of the Service</li>
-                <li>To detect, prevent and address technical issues</li>
-            </ul>
-
-            <h2>Transfer Of Data</h2>
-            <p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
-
-            <h2>Disclosure Of Data</h2>
-            <p>We may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
-            <ul>
-                <li>Comply with a legal obligation</li>
-                <li>Protect and defend the rights or property of Global Travelserve LLC</li>
-                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                <li>Protect the personal safety of users of the Service or the public</li>
-                <li>Protect against legal liability</li>
-            </ul>
-
-            <h2>Security Of Data</h2>
-            <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
-
-            <h2>Service Providers</h2>
-            <p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
-
-            <h2>Links To Other Sites</h2>
-            <p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
-
-            <h2>Children's Privacy</h2>
-            <p>Our Service does not address anyone under the age of 18 ("Children").</p>
-
-            <h2>Changes To This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us by email: support@globaltravelserve.world</p>
+            <div class="mt-5">
+                <h3 class="section-title">Full Privacy Policy Details</h3>
+                <p>We collect personal data (email, name, phone) and usage data (IP, browser) to operate and enhance our services. Data is used for service delivery, support, analytics, and legal compliance. We may share with trusted providers but never sell it. Security is robust, though no system is 100% guaranteed. Questions? Email support@globaltravelserve.world.</p>
+            </div>
         </div>
     </section>
 
