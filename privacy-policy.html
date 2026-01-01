@@ -1,59 +1,139 @@
+<!-- privacy-policy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Global Travelserve LLC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.8; }
-        .navbar { background-color: #001F3F !important; }
-        .legal-header { background: #f8f9fa; padding: 60px 0; border-bottom: 1px solid #dee2e6; }
-        .content-section { padding: 60px 0; }
-        footer { background: #001F3F; color: white; padding: 60px 0; }
-        h3 { color: #001F3F; font-weight: 700; margin-top: 30px; }
+        :root {
+            --primary: #003366;
+            --accent: #FF6B35;
+            --gold: #E6B800;
+            --light: #F8F9FA;
+            --dark: #1E293B;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--dark); background: #fff; }
+        .navbar { background: var(--primary) !important; padding: 1.2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .navbar-brand { font-size: 1.8rem; font-weight: 700; }
+        .nav-link { font-weight: 500; margin: 0 10px; transition: color 0.3s; }
+        .nav-link:hover { color: var(--accent) !important; }
+
+        .content { padding: 100px 0 60px; }
+        h2 { color: var(--primary); font-weight: 600; }
+        p { line-height: 1.6; }
+
+        footer { background: var(--dark); color: #ddd; padding: 60px 0 30px; }
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">GLOBAL TRAVELSERVE</a>
+            <a class="navbar-brand" href="index.html">GLOBAL TRAVELSERVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="travel-consulting.html">Travel Services</a>
+                    <a class="nav-link" href="seo-marketing.html">SEO Services</a>
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <header class="legal-header text-center">
+    <section class="content">
         <div class="container">
-            <h1 class="display-4 fw-bold">Privacy Policy</h1>
-            <p class="text-muted">Effective Date: January 1, 2025</p>
+            <h1 class="text-center mb-5" style="color: var(--primary);">Privacy Policy</h1>
+            <p>Last updated: January 02, 2026</p>
+            <p>Global Travelserve LLC ("us", "we", or "our") operates the globaltravelserve.world website (the "Service").</p>
+            <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+
+            <h2>Information Collection and Use</h2>
+            <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+
+            <h2>Types of Data Collected</h2>
+            <h3>Personal Data</h3>
+            <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+            <ul>
+                <li>Email address</li>
+                <li>First name and last name</li>
+                <li>Phone number</li>
+                <li>Address, State, Province, ZIP/Postal code, City</li>
+                <li>Cookies and Usage Data</li>
+            </ul>
+
+            <h3>Usage Data</h3>
+            <p>We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+
+            <h2>Use of Data</h2>
+            <p>Global Travelserve LLC uses the collected data for various purposes:</p>
+            <ul>
+                <li>To provide and maintain the Service</li>
+                <li>To notify you about changes to our Service</li>
+                <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+                <li>To provide customer care and support</li>
+                <li>To provide analysis or valuable information so that we can improve the Service</li>
+                <li>To monitor the usage of the Service</li>
+                <li>To detect, prevent and address technical issues</li>
+            </ul>
+
+            <h2>Transfer Of Data</h2>
+            <p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
+
+            <h2>Disclosure Of Data</h2>
+            <p>We may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+            <ul>
+                <li>Comply with a legal obligation</li>
+                <li>Protect and defend the rights or property of Global Travelserve LLC</li>
+                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+                <li>Protect the personal safety of users of the Service or the public</li>
+                <li>Protect against legal liability</li>
+            </ul>
+
+            <h2>Security Of Data</h2>
+            <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+            <h2>Service Providers</h2>
+            <p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
+
+            <h2>Links To Other Sites</h2>
+            <p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>Our Service does not address anyone under the age of 18 ("Children").</p>
+
+            <h2>Changes To This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us by email: support@globaltravelserve.world</p>
         </div>
-    </header>
-
-    <div class="container content-section">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <h3>1. Introduction</h3>
-                <p>Global Travelserve LLC ("we," "our," or "us") respects your privacy. This policy explains how we collect, use, and protect your information when you visit globaltravelserve.world or engage our consulting services.</p>
-
-                <h3>2. Information We Collect</h3>
-                <p>We may collect personal identification information, including but not limited to: Name, email address, phone number, and travel documentation (passport details) required for logistics consulting.</p>
-
-                <h3>3. Data Usage</h3>
-                <p>Your information is used to provide bespoke travel itineraries, perform SEO audits, and process service inquiries. We do not sell or lease your data to third parties for marketing purposes.</p>
-
-                <h3>4. Security</h3>
-                <p>We implement industry-standard SSL encryption to protect data transmitted through our website. However, no method of transmission over the internet is 100% secure.</p>
-
-                <div class="mt-5"><a href="index.html" class="btn btn-outline-dark">Back to Home</a></div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="container text-center">
-            <p>GLOBAL TRAVELSERVE LLC | 4036 Cliff St, Laramie, WY 82070</p>
-            <div class="small opacity-50"><a href="terms-of-service.html" class="text-white">Terms</a> | <a href="refund-policy.html" class="text-white">Refunds</a></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>GLOBAL TRAVELSERVE LLC</h4>
+                    <p>4036 Cliff St, Laramie, WY 82070, USA<br>+1 (839) 999 2009<br>support@globaltravelserve.world</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="refund-policy.html">Refunds</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+                    <p class="small mt-4">&copy; 2026 Global Travelserve LLC. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
